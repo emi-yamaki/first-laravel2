@@ -21,20 +21,12 @@ use App\Http\Controllers\TestController;
 |
 */
 
-// Route::get('/', function () {
-
-    return view('welcome');
-// });
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/', [TestController::class, 'index']);
-// Route::get('/hello', [HelloController::class, 'index']);
 
-// Route::get('/test/{room}/{id}', function ($room, $id)
-    {
-    return 'roomが' . $room . 'でidは' . $id . 'です';
-    }
-// );
+
+
 
